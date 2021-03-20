@@ -86,37 +86,37 @@ def main():
 	ci = []
 	cj = []
 	#  o--o
-	for r in range(0,Nlin):
-		for c in range(0,Nlin-1):
-			idx_i = sub2ind([Nlin, Nlin], r, c)
-			idx_j = sub2ind([Nlin, Nlin], r, c+1)
+	for r in range(0,N):
+		for c in range(0,N-1):
+			idx_i = sub2ind([N, N], r, c)
+			idx_j = sub2ind([N, N], r, c+1)
 			ci.append(idx_i)
 			cj.append(idx_j)
 	# o
 	# |
 	# o
-	for r in range(0,Nlin-1):
-		for c in range(0,Nlin):
-			idx_i = sub2ind([Nlin, Nlin], r, c)
-			idx_j = sub2ind([Nlin, Nlin], r+1, c)
+	for r in range(0,N-1):
+		for c in range(0,N):
+			idx_i = sub2ind([N, N], r, c)
+			idx_j = sub2ind([N, N], r+1, c)
 			ci.append(idx_i)
 			cj.append(idx_j)	
 	# o
 	#   \
 	#     o
-	for r in range(0,Nlin-1):
-		for c in range(0,Nlin-1):
-			idx_i = sub2ind([Nlin, Nlin], r, c)
-			idx_j = sub2ind([Nlin, Nlin], r+1, c+1)
+	for r in range(0,N-1):
+		for c in range(0,N-1):
+			idx_i = sub2ind([N, N], r, c)
+			idx_j = sub2ind([N, N], r+1, c+1)
 			ci.append(idx_i)
 			cj.append(idx_j)	
 	#     o
 	#   /
 	# o
-	for r in range(0,Nlin-1):
-		for c in range(0,Nlin-1):
-			idx_i = sub2ind([Nlin, Nlin], r+1, c)
-			idx_j = sub2ind([Nlin, Nlin], r, c+1)
+	for r in range(0,N-1):
+		for c in range(0,N-1):
+			idx_i = sub2ind([N, N], r+1, c)
+			idx_j = sub2ind([N, N], r, c+1)
 			ci.append(idx_i)
 			cj.append(idx_j)
 	
