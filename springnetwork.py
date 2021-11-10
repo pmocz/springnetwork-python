@@ -46,7 +46,7 @@ def applyBoundary(pos, vel, boxsize):
 		vel[is_out, d] *= -1 
 		
 		is_out = np.where(pos[:,d] > boxsize)
-		pos[is_out, d] *= -1 
+		pos[is_out, d]  = boxsize - (pos[is_out,d]-boxsize)
 		vel[is_out, d] *= -1 
 			
 	return (pos, vel)
