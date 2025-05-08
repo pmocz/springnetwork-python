@@ -3,7 +3,7 @@ Spring network code (Python)
 
 ## Create Your Own Spring Network Simulation (With Python)
 
-### Philip Mocz (2021) Princeton Univeristy, [@PMocz](https://twitter.com/PMocz)
+### Philip Mocz (2021) Princeton University, [@PMocz](https://twitter.com/PMocz)
 
 ### [📝 Read the Algorithm Write-up on Medium](https://philip-mocz.medium.com/create-your-own-spring-network-simulation-with-python-d9246e4091e5)
 
